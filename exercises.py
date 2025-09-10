@@ -68,12 +68,7 @@ def ex_2_2():
     raise NotImplementedError("Exercise 2.2 not implemented")
 
 def ex_3_1():
-    """
-    Exercise 3.1 (1p)
-    Use a for-loop to increase 481 by 6 ten times.
-    Return the result.
-    """
-    # TODO: Write your code here
+
     number = 481
     for _ in range (10):
       number += 6
@@ -81,14 +76,26 @@ def ex_3_1():
     raise NotImplementedError("Exercise 3.1 not implemented")
 
 def ex_3_2():
-    """
-    Exercise 3.2 (1p)
-    Use a for-loop to decrease 551 by 8 ten times.
-    Return the result.
-    """
-    # TODO: Write your code here
+    
     number = 551
     for _ in range (10):
       number -= 6
       return number
+   
     raise NotImplementedError("Exercise 3.2 not implemented")
+
+
+def ex_3_3():
+    """
+    Exercise 3.3 (3p)
+    Use a for-loop to build a string with all even numbers in the range
+    22..45, separated by commas. No extra comma at the end.
+    """
+    # TODO: Write your code here
+    number = []
+    for n in range(22, 46):
+       if n % 2 == 0:
+        number.append(str(n))
+    result = ",".join(number)
+    return result
+    raise NotImplementedError("Exercise 3.3 not implemented")
