@@ -33,3 +33,62 @@ def ex_1_4():
      return "Busted"
     
     raise NotImplementedError("Exercise 1.4 not implemented")
+
+def ex_2_1():
+    my_fruit = "plum"
+
+    match my_fruit:
+      case "banana":
+        return("The banana is yellow")
+      case "apple":
+        return("The apple is green")
+      case "kiwi":
+        return("The kiwi is green")
+      case "plum":
+        return("The plum is purple")  
+    
+    raise NotImplementedError("Exercise 2.1 not implemented")
+
+
+def ex_2_2():
+    my_fruit = "pear"
+
+    match my_fruit:
+      case "banana":
+        return("The banana is yellow")
+      case "apple":
+        return("The apple is green")
+      case "kiwi":
+        return("The kiwi is green")
+      case "plum":
+        return("The plum is purple")
+      case _:
+        return("That is an unknown fruit")  
+   
+    raise NotImplementedError("Exercise 2.2 not implemented")
+
+def ex_3_1():
+    """
+    Exercise 3.1 (1p)
+    Use a for-loop to increase 481 by 6 ten times.
+    Return the result.
+    """
+    # TODO: Write your code here
+    number = 481
+    for _ in range (10):
+      number += 6
+      return number
+    raise NotImplementedError("Exercise 3.1 not implemented")
+
+def ex_3_2():
+    """
+    Exercise 3.2 (1p)
+    Use a for-loop to decrease 551 by 8 ten times.
+    Return the result.
+    """
+    # TODO: Write your code here
+    number = 551
+    for _ in range (10):
+      number -= 6
+      return number
+    raise NotImplementedError("Exercise 3.2 not implemented")
