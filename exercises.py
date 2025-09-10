@@ -93,9 +93,86 @@ def ex_3_3():
     """
     # TODO: Write your code here
     number = []
-    for n in range(22, 46):
-       if n % 2 == 0:
-        number.append(str(n))
-    result = ",".join(number)
-    return result
+    for i in range(22, 46):
+       if i % 2 == 0:
+        number.append(str(i))
+    return ",".join(number)
+    
     raise NotImplementedError("Exercise 3.3 not implemented")
+
+def ex_4_1():
+    """
+    Exercise 4.1 (1p)
+    Use a while-loop to increase 10 by 6 until the value is at least 481.
+    Return the number of steps.
+    """
+    # TODO: Write your code here
+    value = 10
+    steps = 0
+    while value < 481:
+      value = value + 6
+      steps = steps +1
+    return steps
+    raise NotImplementedError("Exercise 4.1 not implemented")
+
+def ex_4_2():
+    """
+    Exercise 4.2 (1p)
+    Use a while-loop to subtract 8 from 551 until the value is <= 0.
+    Return the number of steps.
+    """
+    # TODO: Write your code here
+    value = 551
+    steps = 0
+    while value > 551:
+      value = value - 8
+      steps = steps + 1
+    return steps
+    raise NotImplementedError("Exercise 4.2 not implemented")
+
+
+def ex_4_3():
+    """
+    Exercise 4.3 (3p)
+    Use a while-loop to create a comma-separated string of all numbers
+    between 28..63 that are divisible by 5 or 7.
+    """
+    # TODO: Write your code here
+    number = 28
+    result_list = []
+    while number <= 63:
+     if number % 5 == 0 or number % 7 == 0:
+        result_list.append(str(number))
+     number += 1
+
+    result = ",".join(result_list)
+    return result
+
+    raise NotImplementedError("Exercise 4.3 not implemented")
+
+def _run_and_print(fn, label):
+    try:
+        result = fn()
+        print(f"{label}: {result}")
+    except NotImplementedError:
+        print(f"{label}: (not implemented)")
+
+
+def main():
+    print("Running Lab exercises...\n")
+    _run_and_print(ex_1_1, "1.1")
+    _run_and_print(ex_1_2, "1.2")
+    _run_and_print(ex_1_3, "1.3")
+    _run_and_print(ex_1_4, "1.4")
+    _run_and_print(ex_2_1, "2.1")
+    _run_and_print(ex_2_2, "2.2")
+    _run_and_print(ex_3_1, "3.1")
+    _run_and_print(ex_3_2, "3.2")
+    _run_and_print(ex_3_3, "3.3")
+    _run_and_print(ex_4_1, "4.1")
+    _run_and_print(ex_4_2, "4.2")
+    _run_and_print(ex_4_3, "4.3")
+
+
+if __name__ == "__main__":
+    main()
